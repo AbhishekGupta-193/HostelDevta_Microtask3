@@ -1,6 +1,6 @@
 # HostelDevta_Microtask3
 
-#Functionality 
+# Functionality 
 
 HTML geolocation service uses the user's lattitude and longtitude is used and this microservice is build to provide the address of the user .
 
