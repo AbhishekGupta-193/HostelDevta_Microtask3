@@ -1,16 +1,15 @@
 // install express with `npm install express` 
 const express = require('express')
 const app = express()
-const {router}=require('./location.js')
-// app.get('/', (req, res) => res.send('Hello World!'))
 var cors = require('cors')
 app.use(cors())
 app.use(express.json());
-app.use(router);
 
-app.listen(3000, () => {
-  console.log("Server is Listening...")
-})
+app.use(require('./location'));
+app.use(require('./lat_lon'));
 
-// export 'app'
-// module.exports = app
+// app.listen(3000, () => {
+//   console.log("Server is Listening...")
+// })
+
+module.exports = app
